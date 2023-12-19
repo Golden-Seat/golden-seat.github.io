@@ -1,3 +1,3 @@
 ## Golden Seat Website
 Coming Soon
-Contact: info@golden-seat.com
+Contact: info (at) golden-seat.com
