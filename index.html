@@ -6,32 +6,262 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script src="https://kit.fontawesome.com/9ed79de04a.js" crossorigin="anonymous"></script>
 <style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-color: rgb(130, 107, 48);
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.myLink {display: none}
 </style>
 </head>
-<body>
+<body class="w3-light-grey">
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    Golden Seat
-  </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">info@golden-seat.com</p>
-  </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-  </div>
+<!-- Navigation Bar -->
+<div class="w3-bar w3-white w3-border-bottom w3-xlarge">
+  <a href="#" class="w3-bar-item w3-button" style="color: rgb(130, 107, 48)"><b>Golden Seat</b></a>
+  <a href="#" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey"><i class="fa fa-search"></i></a>
 </div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
+  <img class="w3-image" src="images/london2.jpg" alt="London" width="1500" height="700">
+  <div class="w3-display-middle" style="width:65%">
+    <div class="w3-bar w3-black">
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Event');"><i class="fa fa-ticket w3-margin-right"></i>Events</button></a>
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-hotel w3-margin-right"></i>Hotels</button></a>
+      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Restaurant');"><i class="fa fa-utensils w3-margin-right"></i>Restaurants</button></a>
+    </div>
+
+    <!-- Tabs -->
+
+    <div id="Event" class="w3-container w3-white w3-padding-16 myLink">
+        <h3>Discover top-notch events across Saudi Arabia!</h3>
+        <p><span class="w3-tag w3-deep-orange">DISCOUNT!</span> Exclusive New Year's deal: Save 25% when you book today using code "HappyNewYear."</p>
+        <input class="w3-input w3-border" type="text" placeholder="Search for Events">
+        <a href="#events"><p><button class="w3-button w3-dark-grey">Search Events</button></p></a>
+      </div>
+
+    <div id="Hotel" class="w3-container w3-white w3-padding-16 myLink">
+      <h3>Explore premier hotels for your perfect stay.</h3>
+      <p>Experience exceptional service and comfort when you book with us.</p>
+      <p>We understand hospitality; we understand comfort.</p>
+      <a href="#hotels"><p><button class="w3-button w3-dark-grey">Search Hotels</button></p></a>
+    </div>
+
+    <div id="Restaurant" class="w3-container w3-white w3-padding-16 myLink">
+        <h3>Discover top-notch dining spots for a delightful culinary experience.</h3>
+        <p>Secure your table with us for an unparalleled dining experience and savor the finest flavors.</p>
+        <p>We understand culture; we understand taste.</p>
+        <a href="#restaurants"><p><button class="w3-button w3-dark-grey">Search Restaurants</button></p></a>
+    </div>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px;">
+
+  <!-- Explore Nature -->
+  <div id="events" class="w3-container">
+    <h3>Events</h3>
+    <p>Book with us and indulge in enjoyment.</p>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <img src="images/football.png" alt="Football Match" style="width:100%" height="350px">
+      <div class="w3-container w3-white">
+        <h3>Al Hilal vs. Al Nassr Final Match</h3>
+        <p class="w3-opacity">From $5</p>
+        <p>Experience history in the making: Al Hilal vs. Al Nassr final match.</p>
+        <button class="w3-button w3-black w3-margin-bottom">Buy Tickets</button>
+      </div>
+    </div>
+    <div class="w3-half w3-margin-bottom">
+      <img src="images/music.png" alt="Music Concert" style="width:100%" height="350px">
+      <div class="w3-container w3-white">
+        <h3>BLTNM's Shabjdeed & Al Nather Concert</h3>
+        <p class="w3-opacity">From $5</p>
+        <p>Experience the live performance of BLTNM's Shabjdeed & Al Nather.</p>
+        <button class="w3-button w3-black w3-margin-bottom">Buy Tickets</button>
+      </div>
+    </div>
+    <div class="w3-half w3-margin-bottom">
+        <img src="images/books.jpg" alt="Book Festival" style="width:100%" height="350px">
+        <div class="w3-container w3-white">
+          <h3>Fyodor Dostoevsky's Book Reading</h3>
+          <p class="w3-opacity">From $5</p>
+          <p>Join the Book Festival with your family and pass on the gift of education to the next generation.</p>
+          <button class="w3-button w3-black w3-margin-bottom">Buy Tickets</button>
+        </div>
+    </div>
+    <div class="w3-half w3-margin-bottom">
+        <img src="images/film.jpg" alt="Movie" style="width:100%" height="350px">
+        <div class="w3-container w3-white">
+          <h3>Andrei Tarkovsky's Andrei Rublev Screening</h3>
+          <p class="w3-opacity">From $5</p>
+          <p>
+            Immerse yourself in the greatest piece of art: Andrei Tarkovsky's "Andrei Rublev" is now screening in cinemas – a soul-touching experience.</p>
+          <button class="w3-button w3-black w3-margin-bottom">Buy Tickets</button>
+        </div>
+    </div>
+  </div>
+
+  <div class="w3-container w3-margin-top" id="hotels">
+    <h3>Hotels</h3>
+    <p>"Make yourself at home" is more than a slogan; it's our promise. Enjoy the best beds in the industry for a good night's sleep and ultimate relaxation.</p>
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-col m3">
+      <label><i class="fa fa-calendar-o"></i> Check In</label>
+      <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY">
+    </div>
+    <div class="w3-col m3">
+      <label><i class="fa fa-calendar-o"></i> Check Out</label>
+      <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY">
+    </div>
+    <div class="w3-col m2">
+      <label><i class="fa fa-male"></i> Adults</label>
+      <input class="w3-input w3-border" type="number" placeholder="1">
+    </div>
+    <div class="w3-col m2">
+      <label><i class="fa fa-child"></i> Kids</label>
+      <input class="w3-input w3-border" type="number" placeholder="0">
+    </div>
+    <div class="w3-col m2">
+      <label><i class="fa fa-search"></i> Search</label>
+      <button class="w3-button w3-block w3-black">Search</button>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-padding-16">
+    <div class="w3-third w3-margin-bottom">
+      <img src="images/room_single.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Single Room</h3>
+        <h6 class="w3-opacity">From $99</h6>
+        <p>Single bed</p>
+        <p>15m<sup>2</sup></p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Room</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="images/room_double.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Double Room</h3>
+        <h6 class="w3-opacity">From $149</h6>
+        <p>Queen-size bed</p>
+        <p>25m<sup>2</sup></p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Room</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="images/room_deluxe.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Deluxe Room</h3>
+        <h6 class="w3-opacity">From $199</h6>
+        <p>King-size bed</p>
+        <p>40m<sup>2</sup></p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Room</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container w3-margin-top" id="restaurants">
+    <h3>Restaurants</h3>
+    <p>Savor the world's flavors!</p>
+  </div>
+
+  <div class="w3-row-padding w3-padding-16">
+    <div class="w3-third w3-margin-bottom">
+      <img src="images/middle-east.jpeg" alt="Middle Eastern" style="width:100%;">
+      <div class="w3-container w3-white">
+        <h3>Middle Eastern</h3>
+        <h6 class="w3-opacity">From $10</h6>
+        <p>Savor the richness of Middle Eastern cuisine.</p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Book a Breakfast</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="images/mexican.webp" alt="Mexican" style="width:100%;">
+      <div class="w3-container w3-white">
+        <h3>Mexican</h3>
+        <h6 class="w3-opacity">From $10</h6>
+        <p>Explore the rich flavors of Mexican cuisine.</p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Book a Dinner</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="images/italian.jpg" alt="Italian" style="width:100%;">
+      <div class="w3-container w3-white">
+        <h3>Italian</h3>
+        <h6 class="w3-opacity">From $10</h6>
+        <p>Delight in the flavors of Italian cuisine.</p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Book a Lunch</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter -->
+  <div class="w3-container">
+    <div class="w3-panel w3-padding-16 w3-black w3-opacity w3-card w3-hover-opacity-off">
+      <h2>Get the best offers first!</h2>
+      <p>Join our newsletter.</p>
+      <label>E-mail</label>
+      <input class="w3-input w3-border" type="text" placeholder="Your Email address">
+      <button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container">
+    <h2>Contact</h2>
+    <p>Get in touch for any query!</p>
+    <i class="fa fa-map-marker" style="width:30px"></i> Riyadh, Saudi Arabia<br>
+    <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+    <i class="fa fa-envelope" style="width:30px"> </i> Email: info@golden-seat.com<br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-black w3-padding-large" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+  <h5>Find Us On</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabs
+function openLink(evt, linkName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("myLink");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(linkName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+
+// Click on the first tablink on load
+document.getElementsByClassName("tablink")[0].click();
+</script>
 
 </body>
 </html>
