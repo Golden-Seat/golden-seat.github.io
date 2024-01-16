@@ -18,7 +18,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
   border-radius: 3px;
 }
 
-input[type=text] {
+input[type=text], select {
   width: 100%;
   margin-bottom: 20px;
   padding: 12px;
@@ -74,10 +74,11 @@ span.price {
             <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
             <label for="email"><i class="fa fa-envelope"></i> Email</label>
             <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="phone"><i class="fa fa-phone"></i> Phone</label>
+            <input type="text" id="phone" name="phone" placeholder="0123456789">
             <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
             <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-            <label for="city"><i class="fa fa-institution"></i> City</label>
-            <input type="text" id="city" name="city" placeholder="Riyadh">
+            <!--
             <div class="w3-row-padding">
               <div class="w3-half">
                 <label for="state">State</label>
@@ -88,38 +89,72 @@ span.price {
                 <input type="text" id="zip" name="zip" placeholder="10001">
               </div>
             </div>
+            -->
           </div>
 
           <div class="w3-third">
             <h3>Payment</h3>
-            <label for="fname">Accepted Cards</label>
-            <div class="icon-container">
-              <i class="fa fa-cc-visa" style="color:navy;"></i>
-              <i class="fa fa-cc-amex" style="color:blue;"></i>
-              <i class="fa fa-cc-mastercard" style="color:red;"></i>
-              <i class="fa fa-cc-discover" style="color:orange;"></i>
-            </div>
             <label for="cname">Name on Card</label>
             <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-            <label for="ccnum">Credit card number</label>
+            <label for="ccnum">Card number</label>
             <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-            <label for="expmonth">Exp Month</label>
-            <input type="text" id="expmonth" name="expmonth" placeholder="September">
-            <div class="w3-row-padding">
+            <label for="expmonth">Expiry Date</label>
+            <div>
               <div class="w3-half">
-                <label for="expyear">Exp Year</label>
-                <input type="text" id="expyear" name="expyear" placeholder="2018">
+                <select id="expmonth" name="expmonth">
+                  <option value="" disabled selected>Month</option>
+                  <option value="01">January</option>
+                  <option value="02">February</option>
+                  <option value="03">March</option>
+                  <option value="04">April</option>
+                  <option value="05">May</option>
+                  <option value="06">June</option>
+                  <option value="07">July</option>
+                  <option value="08">August</option>
+                  <option value="09">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
               </div>
               <div class="w3-half">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="352">
+                <select id="expyear" name="expyear">
+                  <option value="" disabled selected>Year</option>
+                  <option value="2035">2035</option>
+                  <option value="2034">2034</option>
+                  <option value="2033">2033</option>
+                  <option value="2032">2032</option>
+                  <option value="2031">2031</option>
+                  <option value="2030">2030</option>
+                  <option value="2029">2029</option>
+                  <option value="2028">2028</option>
+                  <option value="2027">2027</option>
+                  <option value="2026">2026</option>
+                  <option value="2025">2025</option>
+                  <option value="2024">2024</option>
+                  <!-- Add more years as needed -->
+                </select>
               </div>
+            </div>
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" placeholder="352">
+          </div>
+
+          <div class="w3-third">
+            <h3>Accepted Cards</h3>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:rgb(9, 9, 133);"></i>
+              <i class="fa fa-cc-amex" style="color:rgb(3, 67, 163);"></i>
+              <i class="fa fa-cc-mastercard" style="color:rgb(157, 5, 5);"></i>
+              <i class="fa fa-cc-discover" style="color:rgb(160, 108, 11);"></i>
             </div>
           </div>
         </div>
+        <!--
         <label>
           <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
         </label>
+        -->
         <button class="w3-button w3-black w3-padding-large checkout-btn" type="submit">CHECKOUT</button>
       </form>
     </div>
