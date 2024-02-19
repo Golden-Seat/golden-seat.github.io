@@ -7,60 +7,23 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <script src="https://kit.fontawesome.com/9ed79de04a.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/style.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
-.myLink {display: none}
-
 .container {
-  background-color: white;
   padding: 5px 20px 15px 20px;
-  border: 1px solid goldenrod;
+  border: 1px solid #ddd;
   border-radius: 3px;
-}
-
-input[type=text], select {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 12px;
-  border: 1px solid goldenrod;
-  border-radius: 3px;
-}
-
-label {
-  margin-bottom: 10px;
-  display: block;
-}
-
-.icon-container {
-  margin-bottom: 20px;
-  padding: 7px 0;
-  font-size: 24px;
-}
-
-.checkout-btn {
-  padding: 12px;
-  margin: 10px 0;
-  width: 100%;
-}
-
-hr {
-  border: 1px solid goldenrod;
-}
-
-span.price {
-  float: right;
-  color: rgb(35, 34, 34);
 }
 </style>
 </head>
 
-<body class="w3-light-grey">
+<body class="w3-black">
 
 <!-- Navigation Bar -->
-<div class="w3-bar w3-white w3-border-bottom w3-large">
-  <a href="index.html" class="w3-bar-item w3-button" style="color: goldenrod"><b>Golden Seat</b></a>
-  <a href="about.html" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey">About Us</a>
-  <a href="contact.html" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey">Contact Us</a>
+<div class="w3-bar light-black w3-border-bottom w3-large">
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-black"><img src="images/golden-seat-black-logo.png" width="150px"></a>
+  <a href="about.html" class="w3-bar-item w3-button w3-right w3-hover-black w3-text-white">About Us</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-right w3-hover-black w3-text-white">Contact Us</a>
 </div>
 
 <div class="w3-row-padding w3-padding-64">
@@ -155,7 +118,7 @@ span.price {
           <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
         </label>
         -->
-        <button class="w3-button w3-black w3-padding-large checkout-btn" type="submit">CHECKOUT</button>
+        <center><button class="w3-button w3-golden w3-padding-large" type="submit">CHECKOUT</button></center>
       </form>
     </div>
   </div>
@@ -173,17 +136,17 @@ span.price {
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
-    <h5>Find Us On</h5>
-    <div class="w3-xlarge w3-padding-16">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
-    </div>
-    <p><a href="terms-and-conditions.html" class="w3-hover-text-red">Terms and Conditions</a> - <a href="privacy-policy.html" class="w3-hover-text-red">Privacy Policy</a></p>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-red">w3.css</a></p>
-  </footer>
+<footer class="w3-container w3-center w3-opacity w3-margin-top w3-margin-bottom">
+  <h5>Find Us On</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p><a href="terms-and-conditions.html" class="w3-text-white w3-hover-golden">Terms and Conditions</a> - <a href="privacy-policy.html"  class="w3-text-white w3-hover-golden">Privacy Policy</a></p>
+  <p>&copy; Copyright Golden Seat 2024</p>
+</footer>
 
 </body>
 </html>
