@@ -1,0 +1,115 @@
+body,h1,h2,h3,h4,h5,h6 
+{
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+.myLink {
+  display: none;
+}
+
+.light-black
+{
+  background-color:#1d2a35!important;
+  color:#ddd!important;
+}
+
+.black {
+  color:#1d2a35!important;
+}
+
+.w3-golden
+{
+  background-color:goldenrod!important;
+  color:#000!important;
+}
+
+.w3-hover-golden:hover
+{
+  color:goldenrod!important;
+}
+
+.w3-third {
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.w3-third img {
+  border-radius: 15px;
+  width: 100%;
+  height: 300px;
+}
+
+.card {
+  flex: 0 0 90%;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 1%;
+  border-radius: 15px;
+  background-color:#1d2a35!important;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #1d2a35;
+  border: 10px solid #1d2a35;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.w3-container h3 {
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+a :hover {
+  color: #1d2a35;
+}
+
+input[type=text], select {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+hr {
+  border: 1px solid goldenrod;
+}
+
+span.price {
+  float: right;
+  color: #ddd!important;
+}
+
+input, select {
+  background-color: #1d2a35!important;
+  color: #ddd!important;
+}

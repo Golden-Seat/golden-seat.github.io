@@ -6,25 +6,84 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <script src="https://kit.fontawesome.com/9ed79de04a.js" crossorigin="anonymous"></script>
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
-.myLink {display: none}
-</style>
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="w3-light-grey">
+<body class="w3-black">
 
 <!-- Navigation Bar -->
-<div class="w3-bar w3-white w3-border-bottom w3-large">
-  <a href="index.html" class="w3-bar-item w3-button" style="color: goldenrod"><b>Golden Seat</b></a>
-  <a href="about.html" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey">About Us</a>
-  <a href="contact.html" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey">Contact Us</a>
+<div class="w3-bar light-black w3-border-bottom w3-large">
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-black"><img src="images/golden-seat-black-logo.png" width="150px"></a>
+  <a href="about.html" class="w3-bar-item w3-button w3-right w3-hover-black w3-text-white">About Us</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-right w3-hover-black w3-text-white">Contact Us</a>
+</div>
+
+<div class="container text-center my-3" style="max-width: 100%;">
+  <div class="row mx-auto my-auto justify-content-center">
+    <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="card w3-card-4">
+            <!-- Image and Card Content for Slide 1 -->
+            <img src="images/banner-1.webp" alt="Image 1">
+            <div class="card-content w3-container w3-black">
+                <h3>Saudi Cup 2024</h3>
+                <p class="w3-opacity">8 March - FROM 56 SAR VAT INCLUDED</p>
+                <button class="w3-button w3-golden w3-margin-bottom">Buy Tickets</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card w3-card-4">
+            <!-- Image and Card Content for Slide 2 -->
+            <img src="images/banner-2.webp" alt="Image 2">
+            <div class="card-content w3-container w3-black">
+                <h3>Champs VS Champs (PFL VS Bellator)</h3>
+                <p class="w3-opacity">8 March - FROM 56 SAR VAT INCLUDED</p>
+                <button class="w3-button w3-golden w3-margin-bottom">Buy Tickets</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card w3-card-4">
+            <!-- Image and Card Content for Slide 3 -->
+            <img src="images/banner-3.webp" alt="Image 3">
+            <div class="card-content w3-container w3-black">
+                <h3>Knockout Chaos Boxing</h3>
+                <p class="w3-opacity">8 March - FROM 56 SAR VAT INCLUDED</p>
+                <button class="w3-button w3-golden w3-margin-bottom">Buy Tickets</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card w3-card-4">
+            <!-- Image and Card Content for Slide 4 -->
+            <img src="images/banner-4.webp" alt="Image 4">
+            <div class="card-content w3-container w3-black">
+                <h3>Teet</h3>
+                <p class="w3-opacity">8 March - FROM 56 SAR VAT INCLUDED</p>
+                <button class="w3-button w3-golden w3-margin-bottom">Buy Tickets</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
 </div>
 
 <!-- Header -->
-<header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
-  <img class="w3-image" src="images/london2.jpg" alt="London" width="1500" height="700">
-  <div class="w3-display-middle" style="width:65%">
+<header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px; margin-top: 20px;">
+  <div class="w3-content" style="width:65%; border:1px solid #ddd!important;">
     <div class="w3-bar w3-black">
       <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Event');"><i class="fa fa-ticket w3-margin-right"></i>Events</button></a>
       <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-hotel w3-margin-right"></i>Hotels</button></a>
@@ -33,75 +92,69 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 
     <!-- Tabs -->
 
-    <div id="Event" class="w3-container w3-white w3-padding-16 myLink">
+    <div id="Event" class="w3-container light-black w3-padding-16 myLink">
         <h3>Discover top-notch events across Saudi Arabia!</h3>
-        <p><span class="w3-tag w3-deep-orange">DISCOUNT!</span> Exclusive New Year's deal: Save 25% when you book today using code "HappyNewYear."</p>
+        <p><span class="w3-tag">DISCOUNT!</span> Exclusive New Year's deal: Save 25% when you book today using code "HappyNewYear."</p>
         <input class="w3-input w3-border" type="text" placeholder="Search for Events">
-        <a href="#events"><p><button class="w3-button w3-dark-grey">Search Events</button></p></a>
-      </div>
+        <br>
+        <a href="#events"><p><button class="w3-button w3-black">Search Events</button></p></a>
+    </div>
 
-    <div id="Hotel" class="w3-container w3-white w3-padding-16 myLink">
+    <div id="Hotel" class="w3-container light-black w3-padding-16 myLink">
       <h3>Explore premier hotels for your perfect stay.</h3>
       <p>Experience exceptional service and comfort when you book with us.</p>
       <p>We understand hospitality; we understand comfort.</p>
-      <a href="#hotels"><p><button class="w3-button w3-dark-grey">Search Hotels</button></p></a>
+      <a href="#hotels"><p><button class="w3-button w3-black">Search Hotels</button></p></a>
     </div>
 
-    <div id="Restaurant" class="w3-container w3-white w3-padding-16 myLink">
+    <div id="Restaurant" class="w3-container light-black w3-padding-16 myLink">
         <h3>Discover top-notch dining spots for a delightful culinary experience.</h3>
         <p>Secure your table with us for an unparalleled dining experience and savor the finest flavors.</p>
         <p>We understand culture; we understand taste.</p>
-        <a href="#restaurants"><p><button class="w3-button w3-dark-grey">Search Restaurants</button></p></a>
+        <a href="#restaurants"><p><button class="w3-button w3-black">Search Restaurants</button></p></a>
     </div>
   </div>
 </header>
 
 <!-- Page content -->
-<div class="w3-content" style="max-width:1100px;">
+<div class="w3-content" style="max-width:90%;">
 
-  <div id="events" class="w3-container">
+  <div class="w3-container w3-margin-top" id="events">
     <h3>Events</h3>
     <p>Book with us and indulge in enjoyment.</p>
   </div>
-  <div class="w3-row-padding">
-    <div class="w3-half w3-margin-bottom">
-      <img src="images/football.png" alt="Football Match" style="width:100%" height="350px">
-      <div class="w3-container w3-white">
+  <div class="w3-row-padding w3-padding-16">
+    <div class="w3-third w3-margin-bottom">
+      <img src="images/football.png" alt="Football Match">
+      <div class="w3-container light-black">
         <h3>Al Hilal vs. Al Nassr Final Match</h3>
         <p class="w3-opacity">From $5</p>
         <p>Experience history in the making: Al Hilal vs. Al Nassr final match.</p>
-        <button class="w3-button w3-black w3-margin-bottom">Buy Tickets</button>
+        <button class="w3-button w3-golden w3-margin-bottom">Buy Tickets</button>
       </div>
     </div>
-    <div class="w3-half w3-margin-bottom">
-      <img src="images/music.png" alt="Music Concert" style="width:100%" height="350px">
-      <div class="w3-container w3-white">
+    <div class="w3-third w3-margin-bottom">
+      <img src="images/music.png" alt="Music Concert">
+      <div class="w3-container light-black">
         <h3>BLTNM's Shabjdeed & Al Nather Concert</h3>
         <p class="w3-opacity">From $5</p>
         <p>Experience the live performance of BLTNM's Shabjdeed & Al Nather.</p>
-        <button class="w3-button w3-black w3-margin-bottom">Buy Tickets</button>
+        <button class="w3-button w3-golden w3-margin-bottom">Buy Tickets</button>
       </div>
     </div>
-    <div class="w3-half w3-margin-bottom">
-        <img src="images/books.jpg" alt="Book Festival" style="width:100%" height="350px">
-        <div class="w3-container w3-white">
-          <h3>Fyodor Dostoevsky's Book Reading</h3>
-          <p class="w3-opacity">From $5</p>
-          <p>Join the Book Festival with your family and pass on the gift of education to the next generation.</p>
-          <button class="w3-button w3-black w3-margin-bottom">Buy Tickets</button>
-        </div>
-    </div>
-    <div class="w3-half w3-margin-bottom">
-        <img src="images/film.jpg" alt="Movie" style="width:100%" height="350px">
-        <div class="w3-container w3-white">
+    <div class="w3-third w3-margin-bottom">
+        <img src="images/film.jpg" alt="Movie" >
+        <div class="w3-container light-black">
           <h3>Andrei Tarkovsky's Andrei Rublev Screening</h3>
           <p class="w3-opacity">From $5</p>
           <p>
-            Immerse yourself in the greatest piece of art: Andrei Tarkovsky's "Andrei Rublev" is now screening in cinemas – a soul-touching experience.</p>
-          <button class="w3-button w3-black w3-margin-bottom">Buy Tickets</button>
+            Andrei Tarkovsky's "Andrei Rublev" is now screening in cinemas.</p>
+          <button class="w3-button w3-golden w3-margin-bottom">Buy Tickets</button>
         </div>
     </div>
   </div>
+
+  <center><button class="w3-button w3-white">See More</button></center>
 
   <div class="w3-container w3-margin-top" id="hotels">
     <h3>Hotels</h3>
@@ -126,46 +179,48 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
       <input class="w3-input w3-border" type="number" placeholder="0">
     </div>
     <div class="w3-col m2">
-      <label><i class="fa fa-search"></i> Search</label>
-      <button class="w3-button w3-block w3-black">Search</button>
+      <label></label>
+      <button class="w3-button w3-block w3-golden">Search</button>
     </div>
   </div>
 
   <div class="w3-row-padding w3-padding-16">
     <div class="w3-third w3-margin-bottom">
-      <img src="images/room_single.jpg" alt="Norway" style="width:100%">
-      <div class="w3-container w3-white">
+      <img src="images/room_single.jpg" alt="Norway">
+      <div class="w3-container light-black">
         <h3>Single Room</h3>
         <h6 class="w3-opacity">From $99</h6>
         <p>Single bed</p>
         <p>15m<sup>2</sup></p>
         <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
-        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Room</button>
+        <button class="w3-button w3-golden w3-margin-bottom">Choose Room</button>
       </div>
     </div>
     <div class="w3-third w3-margin-bottom">
-      <img src="images/room_double.jpg" alt="Norway" style="width:100%">
-      <div class="w3-container w3-white">
+      <img src="images/room_double.jpg" alt="Norway">
+      <div class="w3-container light-black">
         <h3>Double Room</h3>
         <h6 class="w3-opacity">From $149</h6>
         <p>Queen-size bed</p>
         <p>25m<sup>2</sup></p>
         <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
-        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Room</button>
+        <button class="w3-button w3-golden w3-margin-bottom">Choose Room</button>
       </div>
     </div>
     <div class="w3-third w3-margin-bottom">
-      <img src="images/room_deluxe.jpg" alt="Norway" style="width:100%">
-      <div class="w3-container w3-white">
+      <img src="images/room_deluxe.jpg" alt="Norway">
+      <div class="w3-container light-black">
         <h3>Deluxe Room</h3>
         <h6 class="w3-opacity">From $199</h6>
         <p>King-size bed</p>
         <p>40m<sup>2</sup></p>
         <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
-        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Room</button>
+        <button class="w3-button w3-golden w3-margin-bottom">Choose Room</button>
       </div>
     </div>
   </div>
+
+  <center><button class="w3-button w3-white">See More</button></center>
 
   <div class="w3-container w3-margin-top" id="restaurants">
     <h3>Restaurants</h3>
@@ -174,44 +229,35 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 
   <div class="w3-row-padding w3-padding-16">
     <div class="w3-third w3-margin-bottom">
-      <img src="images/middle-east.jpeg" alt="Middle Eastern" style="width:100%;">
-      <div class="w3-container w3-white">
+      <img src="images/middle-east.jpeg" alt="Middle Eastern">
+      <div class="w3-container light-black">
         <h3>Middle Eastern</h3>
         <h6 class="w3-opacity">From $10</h6>
         <p>Savor the richness of Middle Eastern cuisine.</p>
-        <button class="w3-button w3-block w3-black w3-margin-bottom">Book a Breakfast</button>
+        <button class="w3-button w3-golden w3-margin-bottom">Book a Breakfast</button>
       </div>
     </div>
     <div class="w3-third w3-margin-bottom">
-      <img src="images/mexican.webp" alt="Mexican" style="width:100%;">
-      <div class="w3-container w3-white">
+      <img src="images/mexican.webp" alt="Mexican">
+      <div class="w3-container light-black">
         <h3>Mexican</h3>
         <h6 class="w3-opacity">From $10</h6>
         <p>Explore the rich flavors of Mexican cuisine.</p>
-        <button class="w3-button w3-block w3-black w3-margin-bottom">Book a Dinner</button>
+        <button class="w3-button w3-golden w3-margin-bottom">Book a Dinner</button>
       </div>
     </div>
     <div class="w3-third w3-margin-bottom">
-      <img src="images/italian.jpg" alt="Italian" style="width:100%;">
-      <div class="w3-container w3-white">
+      <img src="images/italian.jpg" alt="Italian">
+      <div class="w3-container light-black">
         <h3>Italian</h3>
         <h6 class="w3-opacity">From $10</h6>
         <p>Delight in the flavors of Italian cuisine.</p>
-        <button class="w3-button w3-block w3-black w3-margin-bottom">Book a Lunch</button>
+        <button class="w3-button w3-golden w3-margin-bottom">Book a Lunch</button>
       </div>
     </div>
   </div>
 
-  <!-- Newsletter -->
-  <div class="w3-container">
-    <div class="w3-panel w3-padding-16 w3-black w3-opacity w3-card w3-hover-opacity-off">
-      <h2>Get the best offers first!</h2>
-      <p>Join our newsletter.</p>
-      <label>E-mail</label>
-      <input class="w3-input w3-border" type="text" placeholder="Your Email address">
-      <button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button>
-    </div>
-  </div>
+  <center><button class="w3-button w3-white">See More</button></center>
   
 <!-- End page content -->
 </div>
@@ -219,7 +265,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 <br />
 
 <!-- Footer -->
-<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+<footer class="w3-container w3-center w3-opacity w3-margin-top w3-margin-bottom">
   <h5>Find Us On</h5>
   <div class="w3-xlarge w3-padding-16">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -227,9 +273,20 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
-  <p><a href="terms-and-conditions.html" class="w3-hover-text-red">Terms and Conditions</a> - <a href="privacy-policy.html" class="w3-hover-text-red">Privacy Policy</a></p>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-red">w3.css</a></p>
+  <p><a href="terms-and-conditions.html" class="w3-text-white w3-hover-golden">Terms and Conditions</a> - <a href="privacy-policy.html"  class="w3-text-white w3-hover-golden">Privacy Policy</a></p>
+  <p>&copy; Copyright Golden Seat 2024</p>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  let recipeCarousel = new bootstrap.Carousel(document.getElementById('recipeCarousel'), {
+    interval: 3000, // Adjust the interval as needed
+  });
+});
+</script>
 
 <script>
 // Tabs
@@ -241,10 +298,10 @@ function openLink(evt, linkName) {
   }
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+    tablinks[i].className = tablinks[i].className.replace(" w3-golden", "");
   }
   document.getElementById(linkName).style.display = "block";
-  evt.currentTarget.className += " w3-red";
+  evt.currentTarget.className += " w3-golden";
 }
 
 // Click on the first tablink on load
