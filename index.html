@@ -93,31 +93,130 @@
     <!-- Tabs -->
 
     <div id="Event" class="w3-container light-black w3-padding-16 myLink">
-        <h3>Discover top-notch events across Saudi Arabia!</h3>
-        <p><span class="w3-tag">DISCOUNT!</span> Exclusive New Year's deal: Save 25% when you book today using code "HappyNewYear."</p>
+        <h3>Discover top-notch events across the Globe!</h3>
         <input class="w3-input w3-border" type="text" placeholder="Search for Events">
-        <br>
-        <a href="#events"><p><button class="w3-button w3-black">Search Events</button></p></a>
+        <div class="w3-row">
+          <div class="w3-col m3 input-row">
+            <select class="w3-input w3-border">
+              <option>Select Country</option>
+              <option option="Cuba">Cuba</option>
+              <option option="Palestine">Palestine</option>
+              <option option="Saudi Arabia">Saudi Arabia</option>
+            </select>
+          </div>
+          <div class="w3-col m3 input-row">
+            <select class="w3-input w3-border">
+              <option>Select City</option>
+            </select>
+          </div>
+          <div class="w3-col m3 input-row">
+            <input class="w3-input w3-border" type="date">
+          </div>
+        </div>
+       <p><a href="#events"><button class="w3-button w3-black">Search Events</button></a></p>
     </div>
 
     <div id="Hotel" class="w3-container light-black w3-padding-16 myLink">
-      <h3>Explore premier hotels for your perfect stay.</h3>
-      <p>Experience exceptional service and comfort when you book with us.</p>
-      <p>We understand hospitality; we understand comfort.</p>
-      <a href="#hotels"><p><button class="w3-button w3-black">Search Hotels</button></p></a>
+      <h3>Explore premier hotels for your perfect stay!</h3>
+      <input class="w3-input w3-border" type="text" placeholder="Search for Hotels">
+        <div class="w3-row">
+          <div class="w3-col m3 input-row">
+            <label><i class="fa fa-calendar-o"></i> Check In</label>
+            <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY">
+          </div>
+          <div class="w3-col m3 input-row">
+            <label><i class="fa fa-calendar-o"></i> Check Out</label>
+            <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY">
+          </div>
+          <div class="w3-col m2 input-row">
+            <label><i class="fa fa-male"></i> Adults</label>
+            <input class="w3-input w3-border" type="number" placeholder="1">
+          </div>
+          <div class="w3-col m2 input-row">
+            <label><i class="fa fa-child"></i> Kids</label>
+            <input class="w3-input w3-border" type="number" placeholder="0">
+          </div>
+        </div>
+        <div class="w3-row">
+          <div class="w3-col m3 input-row">
+            <select class="w3-input w3-border">
+              <option>Select Country</option>
+              <option option="Cuba">Cuba</option>
+              <option option="Palestine">Palestine</option>
+              <option option="Saudi Arabia">Saudi Arabia</option>
+            </select>
+          </div>
+          <div class="w3-col m3 input-row">
+            <select class="w3-input w3-border">
+              <option>Select City</option>
+            </select>
+          </div>
+        </div>
+      <p><a href="#hotels"><button class="w3-button w3-black">Search Hotels</button></a></p>
     </div>
 
     <div id="Restaurant" class="w3-container light-black w3-padding-16 myLink">
-        <h3>Discover top-notch dining spots for a delightful culinary experience.</h3>
-        <p>Secure your table with us for an unparalleled dining experience and savor the finest flavors.</p>
-        <p>We understand culture; we understand taste.</p>
-        <a href="#restaurants"><p><button class="w3-button w3-black">Search Restaurants</button></p></a>
+        <h3>Discover dining spots for a delightful culinary experience!</h3>
+        <input class="w3-input w3-border" type="text" placeholder="Search for Restaurants">
+        <div class="w3-row">
+          <div class="w3-col m3 input-row">
+            <select class="w3-input w3-border">
+              <option>Select Country</option>
+              <option option="Cuba">Cuba</option>
+              <option option="Palestine">Palestine</option>
+              <option option="Saudi Arabia">Saudi Arabia</option>
+            </select>
+          </div>
+          <div class="w3-col m3 input-row">
+            <select class="w3-input w3-border">
+              <option>Select City</option>
+            </select>
+          </div>
+          <div class="w3-col m3 input-row">
+            <input class="w3-input w3-border" type="date">
+          </div>
+        </div>
+        <p><a href="#restaurants"><button class="w3-button w3-black">Search Restaurants</button></a></p>
     </div>
   </div>
 </header>
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:90%;">
+
+  <div class="w3-container w3-margin-top" id="hotels">
+    <h3>Cities</h3>
+    <p>Explore the city's highlights with ease: attend events, savor local cuisine, visit historical sites, and book accommodations—all in one click on our customized page.</p>
+  </div>
+
+  <div class="w3-row-padding w3-padding-16">
+    <div class="w3-third w3-margin-bottom">
+      <img src="images/riyadh.jpg" alt="Norway">
+      <div class="w3-container light-black">
+        <h3>Riyadh</h3>
+        <p>Experience Riyadh!</p>
+        <button class="w3-button w3-black w3-margin-bottom">Explore</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="images/jerusalem.avif" alt="Norway">
+      <div class="w3-container light-black">
+        <h3>Jerusalem</h3>
+        <p>Experience Jerusalem!</p>
+        <button class="w3-button w3-black w3-margin-bottom">Explore</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="images/havana.jpg" alt="Norway">
+      <div class="w3-container light-black">
+        <h3>Havana</h3>
+        <p>Experience Havana!</p>
+        <button class="w3-button w3-black w3-margin-bottom">Explore</button>
+      </div>
+    </div>
+  </div>
+
+  <center><button class="w3-button w3-white">See More</button></center>
 
   <div class="w3-container w3-margin-top" id="events">
     <h3>Events</h3>
@@ -130,7 +229,7 @@
         <h3>Al Hilal vs. Al Nassr Final Match</h3>
         <p class="w3-opacity">From $5</p>
         <p>Experience history in the making: Al Hilal vs. Al Nassr final match.</p>
-        <button class="w3-button w3-golden w3-margin-bottom">Buy Tickets</button>
+        <button class="w3-button w3-black w3-margin-bottom">Buy Tickets</button>
       </div>
     </div>
     <div class="w3-third w3-margin-bottom">
@@ -139,7 +238,7 @@
         <h3>BLTNM's Shabjdeed & Al Nather Concert</h3>
         <p class="w3-opacity">From $5</p>
         <p>Experience the live performance of BLTNM's Shabjdeed & Al Nather.</p>
-        <button class="w3-button w3-golden w3-margin-bottom">Buy Tickets</button>
+        <button class="w3-button w3-black w3-margin-bottom">Buy Tickets</button>
       </div>
     </div>
     <div class="w3-third w3-margin-bottom">
@@ -149,74 +248,8 @@
           <p class="w3-opacity">From $5</p>
           <p>
             Andrei Tarkovsky's "Andrei Rublev" is now screening in cinemas.</p>
-          <button class="w3-button w3-golden w3-margin-bottom">Buy Tickets</button>
+          <button class="w3-button w3-black w3-margin-bottom">Buy Tickets</button>
         </div>
-    </div>
-  </div>
-
-  <center><button class="w3-button w3-white">See More</button></center>
-
-  <div class="w3-container w3-margin-top" id="hotels">
-    <h3>Hotels</h3>
-    <p>"Make yourself at home" is more than a slogan; it's our promise. Enjoy the best beds in the industry for a good night's sleep and ultimate relaxation.</p>
-  </div>
-  
-  <div class="w3-row-padding">
-    <div class="w3-col m3">
-      <label><i class="fa fa-calendar-o"></i> Check In</label>
-      <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY">
-    </div>
-    <div class="w3-col m3">
-      <label><i class="fa fa-calendar-o"></i> Check Out</label>
-      <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY">
-    </div>
-    <div class="w3-col m2">
-      <label><i class="fa fa-male"></i> Adults</label>
-      <input class="w3-input w3-border" type="number" placeholder="1">
-    </div>
-    <div class="w3-col m2">
-      <label><i class="fa fa-child"></i> Kids</label>
-      <input class="w3-input w3-border" type="number" placeholder="0">
-    </div>
-    <div class="w3-col m2">
-      <label></label>
-      <button class="w3-button w3-block w3-golden">Search</button>
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-padding-16">
-    <div class="w3-third w3-margin-bottom">
-      <img src="images/room_single.jpg" alt="Norway">
-      <div class="w3-container light-black">
-        <h3>Single Room</h3>
-        <h6 class="w3-opacity">From $99</h6>
-        <p>Single bed</p>
-        <p>15m<sup>2</sup></p>
-        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
-        <button class="w3-button w3-golden w3-margin-bottom">Choose Room</button>
-      </div>
-    </div>
-    <div class="w3-third w3-margin-bottom">
-      <img src="images/room_double.jpg" alt="Norway">
-      <div class="w3-container light-black">
-        <h3>Double Room</h3>
-        <h6 class="w3-opacity">From $149</h6>
-        <p>Queen-size bed</p>
-        <p>25m<sup>2</sup></p>
-        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
-        <button class="w3-button w3-golden w3-margin-bottom">Choose Room</button>
-      </div>
-    </div>
-    <div class="w3-third w3-margin-bottom">
-      <img src="images/room_deluxe.jpg" alt="Norway">
-      <div class="w3-container light-black">
-        <h3>Deluxe Room</h3>
-        <h6 class="w3-opacity">From $199</h6>
-        <p>King-size bed</p>
-        <p>40m<sup>2</sup></p>
-        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
-        <button class="w3-button w3-golden w3-margin-bottom">Choose Room</button>
-      </div>
     </div>
   </div>
 
@@ -234,7 +267,7 @@
         <h3>Middle Eastern</h3>
         <h6 class="w3-opacity">From $10</h6>
         <p>Savor the richness of Middle Eastern cuisine.</p>
-        <button class="w3-button w3-golden w3-margin-bottom">Book a Breakfast</button>
+        <button class="w3-button w3-black w3-margin-bottom">Book a Breakfast</button>
       </div>
     </div>
     <div class="w3-third w3-margin-bottom">
@@ -243,7 +276,7 @@
         <h3>Mexican</h3>
         <h6 class="w3-opacity">From $10</h6>
         <p>Explore the rich flavors of Mexican cuisine.</p>
-        <button class="w3-button w3-golden w3-margin-bottom">Book a Dinner</button>
+        <button class="w3-button w3-black w3-margin-bottom">Book a Dinner</button>
       </div>
     </div>
     <div class="w3-third w3-margin-bottom">
@@ -252,7 +285,7 @@
         <h3>Italian</h3>
         <h6 class="w3-opacity">From $10</h6>
         <p>Delight in the flavors of Italian cuisine.</p>
-        <button class="w3-button w3-golden w3-margin-bottom">Book a Lunch</button>
+        <button class="w3-button w3-black w3-margin-bottom">Book a Lunch</button>
       </div>
     </div>
   </div>
@@ -306,6 +339,111 @@ function openLink(evt, linkName) {
 
 // Click on the first tablink on load
 document.getElementsByClassName("tablink")[0].click();
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the country and city select elements
+    var countrySelect = document.querySelector("#Event .input-row:nth-child(1) select");
+    var citySelect = document.querySelector("#Event .input-row:nth-child(2) select");
+
+    // Add an event listener to the country select element
+    countrySelect.addEventListener("change", function () {
+      // Get the selected country
+      var selectedCountry = countrySelect.value;
+
+      // Clear previous city options
+      citySelect.innerHTML = '<option>Select City</option>';
+
+      // Add city options based on the selected country
+      if (selectedCountry === "Saudi Arabia") {
+        addCityOption("Riyadh");
+      } else if (selectedCountry === "Palestine") {
+        addCityOption("Jerusalem");
+      } else if (selectedCountry === "Cuba") {
+        addCityOption("Havana");
+      }
+      // Add more conditions for other countries and cities as needed
+    });
+
+    // Function to add city option
+    function addCityOption(city) {
+      var option = document.createElement("option");
+      option.value = city;
+      option.textContent = city;
+      citySelect.appendChild(option);
+    }
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the country and city select elements
+    var countrySelect = document.querySelector("#Hotel .input-row:nth-child(1) select");
+    var citySelect = document.querySelector("#Hotel .input-row:nth-child(2) select");
+
+    // Add an event listener to the country select element
+    countrySelect.addEventListener("change", function () {
+      // Get the selected country
+      var selectedCountry = countrySelect.value;
+
+      // Clear previous city options
+      citySelect.innerHTML = '<option>Select City</option>';
+
+      // Add city options based on the selected country
+      if (selectedCountry === "Saudi Arabia") {
+        addCityOption("Riyadh");
+      } else if (selectedCountry === "Palestine") {
+        addCityOption("Jerusalem");
+      } else if (selectedCountry === "Cuba") {
+        addCityOption("Havana");
+      }
+      // Add more conditions for other countries and cities as needed
+    });
+
+    // Function to add city option
+    function addCityOption(city) {
+      var option = document.createElement("option");
+      option.value = city;
+      option.textContent = city;
+      citySelect.appendChild(option);
+    }
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the country and city select elements
+    var countrySelect = document.querySelector("#Restaurant .input-row:nth-child(1) select");
+    var citySelect = document.querySelector("#Restaurant .input-row:nth-child(2) select");
+
+    // Add an event listener to the country select element
+    countrySelect.addEventListener("change", function () {
+      // Get the selected country
+      var selectedCountry = countrySelect.value;
+
+      // Clear previous city options
+      citySelect.innerHTML = '<option>Select City</option>';
+
+      // Add city options based on the selected country
+      if (selectedCountry === "Saudi Arabia") {
+        addCityOption("Riyadh");
+      } else if (selectedCountry === "Palestine") {
+        addCityOption("Jerusalem");
+      } else if (selectedCountry === "Cuba") {
+        addCityOption("Havana");
+      }
+      // Add more conditions for other countries and cities as needed
+    });
+
+    // Function to add city option
+    function addCityOption(city) {
+      var option = document.createElement("option");
+      option.value = city;
+      option.textContent = city;
+      citySelect.appendChild(option);
+    }
+  });
 </script>
 
 </body>
